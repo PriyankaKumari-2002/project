@@ -21,24 +21,25 @@ def main():
     st.markdown("<h3 style='text-align:center; color: darkblue;'><b>Heart Rate Monitor System using face recognition</b></h3>", unsafe_allow_html=True)
     #opening the image
 
-    image = Image.open('microPULSEage.png')
+    #image = Image.open('microPULSEage.png')
+    image = Image.open("C:\\Users\\Priyanka Kumari\\Desktop\\Priyanka\Priyanka\\Engage Facerec Pulse Monitor\\Pulse-master\\microPULSEage.png")
     #st.image(image, width=400, use_column_width=900)
     col1, col2, col3 = st.columns(3)
 
     with col1:
-     st.write(' ')
+      st.write(' ')
 
     with col2:
-     st.image(image, width=230, use_column_width=900)
+      st.image(image, width=190, use_column_width=900)
 
     with col3:
-     st.write(' ')
+      st.write(' ')
     st.markdown("<h5 style='text-align: center; color: black;'> >> Extraction of heart rate optically using flash of camera and face recognition!!</h5>", unsafe_allow_html=True)
     st.markdown("<h5 style='text-align: center; color: black;'> >> Generation of web based electrocardiogram for graphical visualization(ECG)!!</h5>", unsafe_allow_html=True)
     #annotated_text(("In addition , generation of web based", "#8ef"))
     #st.markdown("<img src="https://www.tutorialspoint.com/html/images/test.png" alt="Simply Easy Learning" width="200" height="80">",unsafe_allow_html=True )
     #st.image("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtJK4ZP4-IPT1B9AHb2v-leh6fa5vULTQd0w&usqp=CAU")
-    st.markdown("<style> .reportview-container .main footer {visibility: hidden;} #MainMenu {visibility: hidden;}     </style>", unsafe_allow_html=True)
+    st.markdown("<style> .reportview-container .main footer {visibility: hidden;} #MainMenu {visibility: hidden;} </style>", unsafe_allow_html=True)
     get_pulsemonitor_frames()
     
     #annotated_text(("This feature will help to diagnose critical diseases...Some of them are:"))
